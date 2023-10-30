@@ -10,19 +10,19 @@
   <style>
     body {
       font-family: Arial;
-      background-color: #f5f5f5;
+      background-color: #fcfcfc;
     }
 
-    header,
     footer {
-      background-color: #4ad295;
-      color: #fff;
-      padding: 15px;
+      background-color: #12eeac ;
+      color: #000000;
+      padding: 25px;
+
     }
 
     #logo {
       display: inline-block;
-      width: 100px;
+      width: 35px;
       vertical-align: middle;
     }
 
@@ -41,17 +41,36 @@
     #habilidades {
       padding: 20px;
     }
+
+    .bg-light {
+    background-color: #12eeac!important;
+    }
   </style>
 </head>
 
 <body>
-  <header>
-    <img src="perfil.gif" id="logo" class="img-fluid" />
-    <h1 id="titulo">David Ayme</h1>
-  </header>
-
-  <section id="sobreMi" class="container">
-    <h2 class="text-center">Sobre mí</h2>
+  <nav id= "nave"class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <img src="perfil.gif" id="logo" class="img-fluid" />
+      <a class="navbar-brand" href="#">David Ayme</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobreMi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia laboral</a></li>
+          <li class="nav-item"><a class="nav-link" href="#conocimientos">Conocimientos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <section class="container">
+    <br><br>
+    <h2 id="sobreMi" class="text-center">Sobre mí</h2>
     <p>
       Soy un joven ambateño de 19 años, apasionado por el aprendizaje y el
       desarrollo personal. Mi actitud positiva y proactiva me impulsa a dar lo
@@ -64,8 +83,8 @@
     </p>
   </section>
 
-  <section id="educacion" class="container">
-    <h2 class="text-center">Formación Académica</h2>
+  <section class="container">
+    <h2 id="educacion" class="text-center">Formación Académica</h2>
     <ul class="list-group">
       <li class="list-group-item">
         <i class="fas fa-graduation-cap"></i> Universidad Técnica de Ambato
@@ -78,20 +97,14 @@
     </ul>
   </section>
 
-  <section id="experiencia" class="container">
-    <h2 class="text-center">Experiencia Laboral</h2>
-    <img
-    src="triste.gif"
-    alt="triste"
-    width="100px"
-    height="100px"
-    class="d-block mx-auto"
-  />
+  <section class="container">
+    <h2 id="experiencia" class="text-center">Experiencia Laboral</h2>
+    <img src="triste.gif" alt="triste" width="100px" height="100px" class="d-block mx-auto" />
     <p class="text-center">Actualmente no tengo experiencia laboral</p>
   </section>
 
-  <section id="conocimientos" class="container">
-    <h2 class="text-center">Conocimientos</h2>
+  <section class="container">
+    <h2 id="conocimientos" class="text-center">Conocimientos</h2>
     <ul class="list-group">
       <li class="list-group-item">
         <i class="fas fa-code"></i> HTML
@@ -111,8 +124,8 @@
     </ul>
   </section>
 
-  <section id="habilidades" class="container">
-    <h2 class="text-center">Habilidades</h2>
+  <section class="container">
+    <h2 id="habilidades" class="text-center">Habilidades</h2>
     <ul class="list-group">
       <li class="list-group-item">
         <i class="fas fa-users"></i> Trabajo en equipo
@@ -131,17 +144,18 @@
       </li>
     </ul>
   </section>
-
+  <br><br>
   <footer class="text-center">
     <p>Copyright © 2023 David Ayme</p>
     <p>Contacto: <a href="#">davayme@gmail.com</a></p>
     <p>Redes sociales: <a href="#">Facebook</a> <a href="#">Instagram</a></p>
     <p>Celular: 0998643300</p>
   </footer>
+  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+  
 </body>
 
 </html>
