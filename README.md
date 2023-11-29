@@ -30,4 +30,21 @@
 2. Ejecución de la página.
 - Se puede ejecutar la página simplemente abriendo el archivo index.html
 
-4. Despliegue.
+3. Despliegue.
+- Subir tu código a GitHub
+
+- Asegúrate de que todo tu código, incluido el HTML, CSS, imágenes, etc., esté subido a tu repositorio de GitHub.
+
+-Habilita GitHub Pages en la Configuración del Repositorio:
+
+   Ve a la página principal de tu repositorio en GitHub.
+   Haz clic en la pestaña "Settings" (Configuración).
+   Desplázate hacia abajo hasta la sección "GitHub Pages".
+   Selecciona la rama que contiene tu código principal (por lo general, main o master) como fuente.
+   Guarda la configuración.
+   Espera a que GitHub Pages Despliegue tu Página:
+
+   Importante:
+   Puede llevar unos minutos para que GitHub Pages procese y despliegue tu página. Mientras tanto, puedes ver el estado     en la sección "GitHub Pages" de la configuración.
+
+#Link del portafolio: https://davayme.github.io/Hoja-de-vida.github.io/
