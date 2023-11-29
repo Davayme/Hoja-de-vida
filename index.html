@@ -7,18 +7,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <title>Hoja de vida</title>
+
   <style>
     body {
       font-family: Arial;
       background-color: #fcfcfc;
     }
 
+    .container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
     footer {
-      background-color: #12eeac ;
+      background-color: rgb(248, 249, 251);
       color: #000000;
       padding: 25px;
-
+      border-top: 2px solid #000000;
+      
     }
+
 
     #logo {
       display: inline-block;
@@ -32,28 +40,68 @@
       vertical-align: middle;
     }
 
-    #sobreMi {
+    .nav-item {
+      margin-right: 10px;
+    }
+
+    #nave {
+      border-bottom: 2px solid #000000;
+    }
+
+    section {
+      border: 2px solid #000000;
+      border-radius: 10px;
+      margin-bottom: 20px;
       padding: 20px;
+      background-color: #ffffff;
     }
 
-    #educacion,
-    #experiencia,
-    #habilidades {
-      padding: 20px;
+    h2 {
+      margin-bottom: 20px;
     }
 
-    .bg-light {
-    background-color: #12eeac!important;
+    .blur-in {
+      animation: blur-in 0.5s linear both
     }
-    .tracking-in-contract{animation:tracking-in-contract 0.7s linear both} @keyframes tracking-in-contract{0%{letter-spacing:.6em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
-    .blur-in{animation:blur-in 0.5s linear both} @keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
- </style>
 
-<link rel="icon" href="icono.ico" type="image/x-icon">
+    .tracking-in-contract {
+      animation: tracking-in-contract 0.7s linear both
+    }
+
+    @keyframes blur-in {
+      0% {
+        filter: blur(12px);
+        opacity: 0
+      }
+
+      100% {
+        filter: blur(0);
+        opacity: 1
+      }
+    }
+
+    @keyframes tracking-in-contract {
+      0% {
+        letter-spacing: .6em;
+        opacity: 0
+      }
+
+      40% {
+        opacity: .6
+      }
+
+      100% {
+        letter-spacing: normal;
+        opacity: 1
+      }
+    }
+  </style>
+
+  <link rel="icon" href="icono.ico" type="image/x-icon">
 </head>
 
 <body>
-  <nav id= "nave"class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav id="nave" class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <img src="perfil.gif" id="logo" class="img-fluid" />
       <a class="navbar-brand" href="#">David Ayme</a>
@@ -71,19 +119,15 @@
       </div>
     </div>
   </nav>
-  
+
   <section class="container">
-    <br><br>
     <h2 id="sobreMi" class="text-center tracking-in-contract">Sobre mí</h2>
     <p class="blur-in">
-      Soy un joven ambateño de 19 años, apasionado por el aprendizaje y el
-      desarrollo personal. Mi actitud positiva y proactiva me impulsa a dar lo
-      mejor de mí en cualquier entorno. Siempre estoy dispuesto a enfrentar
-      nuevos desafíos y aprender cosas nuevas. Me considero un individuo
-      comprometido y en constante crecimiento, listo para contribuir de manera
-      positiva en equipos de trabajo y proyectos. Mi objetivo es seguir
-      desarrollándome y alcanzar mis metas académicas y profesionales con
-      determinación y entusiasmo.
+      Soy un joven ambateño de 19 años, apasionado por el aprendizaje y el desarrollo personal. Mi actitud positiva y
+      proactiva me impulsa a dar lo mejor de mí en cualquier entorno. Siempre estoy dispuesto a enfrentar nuevos
+      desafíos y aprender cosas nuevas. Me considero un individuo comprometido y en constante crecimiento, listo para
+      contribuir de manera positiva en equipos de trabajo y proyectos. Mi objetivo es seguir desarrollándome y alcanzar
+      mis metas académicas y profesionales con determinación y entusiasmo.
     </p>
   </section>
 
@@ -155,11 +199,11 @@
     <p>Redes sociales: <a href="#">Facebook</a> <a href="#">Instagram</a></p>
     <p>Celular: 0998643300</p>
   </footer>
-  
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+
 </body>
 
 </html>
